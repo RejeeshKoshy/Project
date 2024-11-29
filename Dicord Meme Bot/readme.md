@@ -141,3 +141,19 @@ To develop a Discord bot that interacts with users by:
 2. Run the bot:
    ```bash
    python bot.py
+
+3. Invite the bot to your Discord server and mention it in the chat to interact!
+
+---
+
+## Contributions
+Contributions are welcome! Please open issues or submit pull requests for bug fixes, enhancements, or new features.
+
+
+### Highlights of the Documentation:
+- **Clear Structure**: Organized into sections like Objective, Skills Gained, Tools Used, etc.
+- **Readable Format**: Includes headings, bullet points, and code blocks for easy navigation.
+- **Future-Proof**: Suggests enhancements and optional AI integration for better scalability.
+- **Developer-Friendly**: Lists prerequisites and setup instructions for quick deployment.
+
+Let me know if you need any modifications or additional details! 😊
