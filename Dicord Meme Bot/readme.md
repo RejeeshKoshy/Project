@@ -7,7 +7,7 @@
 To develop a Discord bot that interacts with users by:
 1. Responding to user messages with greetings or farewells.
 2. Fetching and sharing memes from an external API.
-3. (Optional) Integrating ChatGPT to generate conversational responses based on user input.
+3. Integrating with Llama to generate conversational responses based on user input.
 
 ---
 
@@ -21,8 +21,8 @@ To develop a Discord bot that interacts with users by:
   - Fetching data from external APIs (e.g., Meme API).
 - **Asynchronous Programming**:
   - Implementing event-driven code using Python's `asyncio`.
-- **(Optional) AI Integration**:
-  - Working with OpenAI's GPT-3.5 for enhanced bot responses.
+- **AI Integration**:
+  - Working with Llama3.1-70b for enhanced bot responses.
 
 ---
 
@@ -33,10 +33,10 @@ To develop a Discord bot that interacts with users by:
 - **Libraries**:
   - `discord.py` for bot interaction with Discord servers.
   - `requests` for handling REST API calls.
-  - (Optional) `openai` for integrating GPT-based conversational AI.
+  - `llamaapi` for integrating conversational AI.
 - **APIs**:
   - Meme API (`https://meme-api.com/gimme`) for fetching memes.
-  - OpenAI API (optional, for chatbot responses).
+  - Llama API for chatbot responses.
 - **Platform**:
   - Discord for bot deployment and interaction.
 
@@ -54,8 +54,8 @@ To develop a Discord bot that interacts with users by:
 3. **Event-Driven Design**:
    - Listens to and responds to user messages dynamically using Discord's event handling.
 
-4. **(Optional) AI Responses**:
-   - Can use OpenAI's GPT-3.5 for generating conversational and meme-themed replies.
+4. **AI Responses**:
+   - Can use Llama's 3.1-70b for generating conversational and meme-themed replies.
 
 5. **Customizable and Expandable**:
    - Easy to extend with new features like commands, additional APIs, or chatbot capabilities.
@@ -71,8 +71,8 @@ To develop a Discord bot that interacts with users by:
    - Listens for messages using the `on_message` event in the `discord.Client` class.
    - Responds based on trigger phrases like "hello," "bye," or "meme."
 
-3. **AI Integration (Optional)**:
-   - (Commented-out code in the project) Uses OpenAI's ChatCompletion API to generate responses, adding personality and context to interactions.
+3. **AI Integration **:
+   - Uses LlamaAPI's Chat completion API to generate responses, adding personality and context to interactions.
 
 4. **Bot Setup**:
    - Utilizes Discord's `Intents` for managing permissions and interactions.
@@ -101,7 +101,7 @@ To develop a Discord bot that interacts with users by:
 ## Future Enhancements
 
 1. **Enable ChatGPT Integration**:
-   - Add OpenAI GPT-3.5 responses to improve conversational capabilities.
+   - Add Llama's 3.1-70b responses to improve conversational capabilities.
 2. **Additional Commands**:
    - Add commands for specific meme categories or personalized replies.
 3. **Enhanced Interactivity**:
@@ -119,16 +119,16 @@ To develop a Discord bot that interacts with users by:
      ```bash
      pip install discord requests
      ```
-     *(Optional)*: For ChatGPT integration:
+2. **For ChatGPT integration:**
      ```bash
-     pip install openai
+     pip install llamaapi
      ```
 
 2. **Discord Bot Token**:
    - Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications) and copy its token.
 
 3. **API Keys**:
-   - Obtain an OpenAI API key if using ChatGPT integration.
+   - Obtain an Llama API key if using Llama integration.
 
 ---
 
@@ -136,7 +136,7 @@ To develop a Discord bot that interacts with users by:
 
 1. Replace the placeholders:
    - Add your Discord bot token in `client.run(token)`.
-   - *(Optional)* Add your OpenAI API key in the `openai.api_key` section.
+   - Add your Llama API key in the `api_key` section.
 
 2. Run the bot:
    ```bash
