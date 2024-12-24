@@ -10,6 +10,7 @@ This repository contains diverse projects ranging from game development to machi
 2. [Passenger Counting using JavaScript](#2-passenger-counting-using-javascript)
 3. [Facial Expression Recognition with PyTorch](#3-facial-expression-recognition-with-pytorch)
 4. [Discord Meme Bot with Python](#4-discord-meme-bot-with-python)
+5. [Malware Prediction and Detection Model](#5-malware-predition-and-detection-model).
 
 ---
 
@@ -131,6 +132,48 @@ To develop a Discord bot that interacts with users by:
 - Event-Driven Design
 - (Optional) AI Responses
 - Customizable and Expandable
+
+### 5. Malware Prediction and Detection Model
+
+### Objective:
+To develop a machine learning-based system for detecting malicious software by analyzing key features of software samples, thereby improving cybersecurity measures.
+
+### Skills Gained:
+- Data preprocessing and exploratory data analysis (EDA).
+- Building, training, and evaluating machine learning models.
+- Implementing a RESTful API for deploying models.
+- Visualizing data insights and model performance.
+
+### Tools and Technologies Used:
+
+#### Languages & Frameworks:
+- **Python**: For data processing and application development.
+- **Flask**: For API development and deployment.
+
+#### Libraries:
+- **Pandas** and **NumPy**: For data manipulation and preprocessing.
+- **Matplotlib** and **Seaborn**: For data visualization.
+- **Scikit-learn**: For implementing machine learning models.
+- **XGBoost**: For advanced gradient boosting classification.
+
+#### Platforms:
+- **Google Colab**: For interactive coding and analysis.
+
+### Key Features:
+- Binary classification of software samples into benign or malicious categories.
+- Preprocessing pipeline for handling missing values and scaling features.
+- Implementation of Random Forest and XGBoost models.
+- Comprehensive evaluation metrics like accuracy, precision, recall, and F1 score.
+- Deployment of the trained model as a Flask API for real-time predictions.
+
+### Datasets:
+- Kaggle's Malware Detection Dataset: Contains labeled samples with features such as file size, entropy, and imported libraries.
+
+### Actionable Insights:
+- Enhances cybersecurity by accurately identifying malware.
+- Demonstrates the practical application of machine learning in cybersecurity.
+- Provides a scalable model for deployment in real-world scenarios.
+
 
 ## License
 
