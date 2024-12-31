@@ -1,0 +1,93 @@
+https://florianhuebler.com/traffic-priorisation-in-anylogic/
+
+Show traffic coordination, time distance graph (signal phasing)
+
+// Define a custom traffic control system that prioritizes emergency vehicles
+class CustomTrafficControlSystem extends TrafficControlSystem {
+  @Override
+  public void init() {
+    super.init();
+    // Add custom initialization code here
+  }
+  @Override
+  public void run() {
+    super.run();
+    // Add custom traffic control code here
+  }
+}
+
+// Create a new instance of the custom traffic control system
+CustomTrafficControlSystem customTrafficControlSystem = new CustomTrafficControlSystem();
+
+// Define a custom traffic light that is controlled by the traffic control system
+class CustomTrafficLight extends TrafficLight {
+  @Override
+  public void init() {
+    super.init();
+    // Add custom initialization code here
+  }
+  @Override
+  public void run() {
+    super.run();
+    // Add custom traffic light control code here
+  }
+}
+
+// Create a new instance of the custom traffic light
+CustomTrafficLight customTrafficLight = new CustomTrafficLight();
+
+// Code the traffic light controller to detect the presence of emergency vehicles and adjust the timing
+if (emergencyVehicle.isOnRoad()) {
+  customTrafficLight.setGreenTime(10);
+  customTrafficLight.setYellowTime(3);
+  customTrafficLight.setRedTime(5);
+} else {
+  customTrafficLight.setGreenTime(30);
+  customTrafficLight.setYellowTime(5);
+  customTrafficLight.setRedTime(20);
+}
+
+
+###########################################################################################
+
+o introduce a new agent, an emergency vehicle with different priorities in AnyLogic, follow these steps:
+
+    In the AnyLogic workspace, create a new agent type for the emergency vehicle by right-clicking on the "Agent" palette and selecting "New Agent Type".
+
+    Name the new agent type, for example, "EmergencyVehicle".
+
+    Add the necessary parameters to the agent type, such as the vehicle's maximum speed, capacity, and the type of emergency it responds to.
+
+    Add an event to the agent type that represents the emergency call. This event can be triggered by a simulation element, such as a button or a timer.
+
+    Add a method to the emergency vehicle agent that represents the response to the emergency call. This method should include the logic for the vehicle's movement, such as determining the fastest route to the emergency location.
+
+    Assign priorities to the emergency vehicle agent based on its type, for example, a higher priority for an ambulance responding to a critical medical emergency than for a fire truck responding to a non-critical fire.
+
+    Integrate the emergency vehicle agent into the simulation by adding it to the simulation model and connecting it to other simulation elements, such as the emergency call event and the destination location.
+
+    Test and validate the emergency vehicle agent by running the simulation and observing its behavior.
+
+###########################################################################################
+
+traceln(time());
+	Traced time of agent in action will be logged into console
+	Trace ln	:	Trace Line
+
+traceToDB();
+	Trace values to database
+
+
+Start by creating a new anyLogic project and selecting the "Road Traffic Library" option. This will give you access to the pre-built road network components and traffic objects you will need to create your simulation.
+
+Use the road network editor to design the layout of your traffic system, including roads, intersections, traffic lights, and any other relevant features. You can customize the properties of these objects to match your real-world scenario.
+
+Add vehicles to your simulation using the vehicle types and generators available in the Road Traffic Library. For emergency vehicles, you may want to create a custom vehicle type that has priority over other vehicles.
+
+Create agents to represent the traffic lights or other signaling devices in your system. Use the built-in control mechanisms to coordinate the timing and duration of signals, taking into account the presence of emergency vehicles and the need to clear intersections quickly.
+
+Implement a priority system for emergency vehicles, using either preemption (i.e., temporarily overriding the normal traffic signals) or phase modification (i.e., adjusting the timing of the signals to allow the emergency vehicle to pass through). You can use the built-in anyLogic functions to control the behavior of the emergency vehicles and the signaling devices.
+
+Test and debug your simulation, using the anyLogic simulation tools to monitor the behavior of the vehicles and the signaling devices in real time. Make adjustments as necessary to improve the accuracy and realism of your simulation.
+
+Once your simulation is complete, you can use it to analyze the performance of your priority system under different conditions, such as varying levels of traffic, different types of emergency vehicles, and different signaling configurations. You can also use it to test the effects of changes or improvements to the system, such as the addition of new roads or intersections, or the implementation of new signaling technologies

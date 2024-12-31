@@ -1,0 +1,50 @@
+Algorithm
+
+Obtain the current phase timing and duration of the cycle. This information can be obtained from the controller unit that controls the traffic signal.
+
+Determine the desired phase timing that you want to change to. (This can be based on various factors such as traffic flow, pedestrian activity, and time of day.)
+
+Calculate the difference between the current phase timing and the desired phase timing. 
+This will give you the amount of time by which you need to shift the cycle phase.
+
+Divide the shift time by the duration of the cycle to determine the number of cycles that need to be added or subtracted to reach the desired phase timing.
+
+Adjust the cycle timing by adding or subtracting the required number of cycles to the current phase timing.
+
+Validate the new phase timing to ensure that it falls within the limits of the traffic signal controller. 
+(This is important to prevent incorrect signaling or damage to the controller.)
+
+Update the traffic signal controller with the new phase timing.
+
+Monitor the traffic flow to ensure that the new phase timing is providing the desired results. 
+(If necessary, repeat the algorithm to make further adjustments to the phase timing.)
+
+
+Implementation
+
+
+Obtain the current phase timing and duration of the cycle: 
+	To access the current phase timing and duration of the cycle for a traffic signal controller. 
+	For example, you could use the getPhaseIndex() and getPhaseDuration() methods to retrieve this information.
+
+Determine the desired phase timing: 
+	Factors such as traffic flow, pedestrian activity, and time of day to determine the desired phase timing. 
+	
+Calculate the difference between the current phase timing and the desired phase timing: 
+	Simple arithmetic to calculate the difference between the current phase timing and the desired phase timing.
+
+Divide the shift time by the duration of the cycle: 
+	The division operator to calculate the number of cycles that need to be added or subtracted to reach the desired phase timing.
+
+Adjust the cycle timing: 
+	The setPhaseDuration() method in the Traffic Library to adjust the cycle timing by adding or subtracting the required number of cycles to the current phase timing.
+
+Validate the new phase timing: 
+	Conditional statements to validate the new phase timing to ensure that it falls within the limits of the traffic signal controller.
+
+Update the traffic signal controller: 
+	The setPhaseDuration() method to update the traffic signal controller with the new phase timing.
+
+Monitor the traffic flow: 
+	AnyLogic's visualization tools to monitor the traffic flow and ensure that the new phase timing is providing the desired results. 
+	If necessary, you can repeat the algorithm to make further adjustments to the phase timing. [AI]
