@@ -11,6 +11,7 @@ This repository contains diverse projects ranging from game development to machi
 3. [Facial Expression Recognition with PyTorch](#3-facial-expression-recognition-with-pytorch)
 4. [Discord Meme Bot with Python](#4-discord-meme-bot-with-python)
 5. [Malware Prediction and Detection Model](#5-malware-prediction-and-detection-model)
+6. [Priority Based Smart Traffic System](#6-priority-based-smart-traffic-system)
 
 ---
 
@@ -175,6 +176,29 @@ To develop a machine learning-based system for detecting malicious software by a
 
 ---
 
+### 6. Priority Based Smart Traffic System
+
+**Objective**
+To model and simulate a traffic management system that prioritizes emergency vehicles using a traffic simulator and timed signal phasing to deploy green corridors, reducing response time and traffic congestion.
+
+**Skills Gained**
+- Traffic simulation and modeling.  
+- Algorithm design for dynamic signal coordination.  
+- Data analysis and decision-making for smart systems.  
+
+**Tools and Technologies Used**
+- Tools: AnyLogic for traffic simulation.  
+- Languages: Java or Python (for algorithm integration).  
+- Platform: Centralized control system for traffic coordination.  
+
+**Key Features**
+- Traffic Simulation: Models real-world traffic scenarios to assess system efficiency.  
+- Dynamic Green Corridor: Timed phasing of signals for emergency vehicle prioritization.  
+- Emergency Vehicle Registration: Central database integration for secure vehicle data storage.  
+- Flexible Emergency Handling: Adaptable configurations based on emergency type (ambulance, fire, police).  
+- Traffic Signal Integration: Coordination across multiple intersections to optimize vehicle flow.  
+
+---
 
 ## License
 
