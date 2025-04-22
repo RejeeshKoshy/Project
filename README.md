@@ -12,6 +12,7 @@ This repository contains diverse projects ranging from game development to machi
 4. [Discord Meme Bot with Python](#4-discord-meme-bot-with-python)
 5. [Malware Prediction and Detection Model](#5-malware-prediction-and-detection-model)
 6. [Priority Based Smart Traffic System](#6-priority-based-smart-traffic-system)
+7. [Markdown-to-HTML Blog Generator](#7-markdown-to-html-blog-generator)
 
 ---
 
@@ -200,6 +201,32 @@ To model and simulate a traffic management system that prioritizes emergency veh
 
 ---
 
+### 7. Markdown-to-HTML Blog Generator
+
+**Objective**  
+A side project to streamline personal blogging by converting Markdown files into full HTML blog posts and preview cards, reducing repetitive manual formatting.
+
+**Skills Gained**  
+- Markdown and Frontmatter Structuring  
+- HTML Templating with Jinja2  
+- Python Scripting and Automation  
+- Workflow Optimization  
+
+**Tools and Technologies Used**  
+- **Languages & Frameworks**: Python for script logic and content processing.
+- **Libraries**:
+  - `markdown` for converting Markdown to HTML.  
+  - `python-frontmatter` for metadata extraction.  
+  - `jinja2` for HTML templating.  
+  - `watchdog` (optional) for auto-regeneration on file changes.  
+
+**Key Features**  
+- Converts `.md` files into full HTML blog posts and preview card components.  
+- Separates content from layout using reusable Jinja2 templates.  
+- Auto-generates output files to a designated folder.  
+- Optional live watcher for auto-regeneration when content changes.
+
+---
 ## License
 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
